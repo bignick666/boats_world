@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="card mb-3">
+  <div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{ item.image.url }}" class="img-fluid rounded-start" alt="..." style="height: 100%;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="card-title">{{ item.model }}</h3>
+        <p class="card-text"><div class="bd-example-snippet bd-code-snippet">
+                    <div class="bd-example m-0 border-0">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th scope="col">Тип</th>
+            <th scope="col">{{ item.type }}</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Мощность</td>
+            <td>{{ item.max_power }}лс</td>
+          </tr>
+          <tr>
+            <td>максимальные рабочие обороты</td>
+            <td>{{ item.turnovers }}об\мин</td>
+          </tr>
+          <tr>
+            <td>Рабочий объем</td>
+            <td>{{ item.volume }}см2</td>
+          </tr>
+          <tr>
+            <td>Система запуска</td>
+            <td>{{ item.launch_system }}</td>
+          </tr>
+          <tr>
+            <td>Диаметр цилиндра/ход поршня</td>
+            <td>{{ item.diameter_go }}</td>
+          </tr>
+          <tr>
+            <td>Топливный бак</td>
+            <td>1л</td>
+          </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+  <button type="button" class="btn btn-primary btn-lg">Оформить доставку</button>
+<button type="button" class="btn btn-secondary disabled btn-lg">149 000Р.</button>
+</div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+</div>

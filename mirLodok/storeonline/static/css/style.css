@@ -1,0 +1,22 @@
+#linkmain {
+	color: whitesmoke;
+	font-display: Italic;
+	font-size: 50px;
+	border-color: black;
+	border-radius: 1px solid;
+	margin-left: 50px;
+	display: inline;
+}
+
+#navbarmain {
+	background: #265a96;
+}
+
+#navbar-custom li {
+	margin-left: 40px;
+}
+
+.nav-item{
+	font-size: 22px;
+	font-family: sans-serif;
+}
