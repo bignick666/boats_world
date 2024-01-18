@@ -1,4 +1,6 @@
 from django.shortcuts import render, get_object_or_404
+
+from storeonline.celery import app
 from .models import Group, OutboardMotor
 from .forms import ContactForm
 
